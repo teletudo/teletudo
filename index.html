@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -12,60 +12,30 @@
       background-color: #ffb6c1;
       font-family: Arial, sans-serif;
       font-size: 14px;
-      color: #000000;
+      color: #000;
       text-align: center;
+    }
+
+    .topo {
+      width: 100%;
+      display: block;
+      margin: 0;
+      padding: 0;
     }
 
     .container {
       width: 100%;
       max-width: 600px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 0 20px 40px;
       box-sizing: border-box;
-    }
-
-    .topo {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      display: block;
-      margin: 0 auto 30px auto;
-    }
-
-    .aviso {
-      margin-top: 35px;
-      font-weight: bold;
-      line-height: 1.5;
-    }
-
-    .texto-email {
-      margin-top: 30px;
-      margin-bottom: 20px;
-      line-height: 1.6;
-      font-size: 14px;
-      color: #000;
-    }
-
-    .email-box {
-      width: 100%;
-      max-width: 320px;
-      padding: 14px;
-      font-size: 14px;
-      font-family: Arial, sans-serif;
-      border: 2px solid #000;
-      border-radius: 10px;
-      box-sizing: border-box;
-      margin-bottom: 15px;
-      color: #000;
-      text-align: center;
-      background: #fff;
     }
 
     .botao-imagem {
       width: 100%;
-      max-width: 320px;
+      max-width: 640px;
       display: block;
-      margin: 0 auto 15px auto;
+      margin: 10px auto 25px auto;
     }
 
     .botao-imagem img {
@@ -73,15 +43,50 @@
       display: block;
     }
 
+    .aviso {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 15px 0 50px;
+    }
+
+    .texto-email {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .setas {
+      display: block;
+      margin-top: 8px;
+      font-size: 22px;
+    }
+
+    .email-box {
+      width: 100%;
+      max-width: 520px;
+      padding: 18px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      border: 4px solid #000;
+      border-radius: 20px;
+      box-sizing: border-box;
+      margin-bottom: 18px;
+      color: #000;
+      background: #fff;
+      text-align: left;
+    }
+
     .botao-enviar {
       width: 100%;
-      max-width: 320px;
-      padding: 14px;
+      max-width: 520px;
+      padding: 16px;
       border: none;
-      border-radius: 10px;
+      border-radius: 14px;
       background: #000;
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
       cursor: pointer;
       font-family: Arial, sans-serif;
@@ -95,24 +100,23 @@
   </style>
 </head>
 <body>
+
+  <img src="topo01.png" alt="Tele Tudo" class="topo" />
+
   <div class="container">
-    <img src="topo01.png" alt="Tele Tudo" class="topo" />
-
-    <p class="aviso">
-      🚨Para acessar o grupo com as mídias deve ter instalado no seu telefone o Telegram!
-    </p>
-
     <div class="botao-imagem">
       <a href="https://t.me/+sXreo1O5RgRhYTgx" target="_blank">
         <img src="botao01.png" alt="Entrar no Telegram">
       </a>
     </div>
 
+    <p class="aviso">
+      🚨Para acessar o grupo com as mídias deve ter instalado no seu telefone o Telegram!
+    </p>
+
     <p class="texto-email">
-      <strong>Quer receber todas as semanas novos grupos no seu email?</strong><br>
-      Grupos e canais gratuitos - Só links revisados sem golpes e nem vírus.<br>
-      Basta colocar seu email!<br>
-      ⏬⏬⏬
+      Cadastre seu email e receba a lista dos melhores grupos
+      <span class="setas">⏬⏬⏬⏬⏬⏬</span>
     </p>
 
     <form action="https://script.google.com/macros/s/AKfycbzjX_kCwHZdDC3uGImem0U66mmcBDr1oVSrdMze00g9EDMAQFS-N2vuF79Q_xskZBI/exec" method="POST" target="_blank">
@@ -129,5 +133,6 @@
       </button>
     </form>
   </div>
+
 </body>
 </html>
