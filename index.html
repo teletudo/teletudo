@@ -1,8 +1,11 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tele Tudo</title>  <style>
+  <title>Tele Tudo</title>
+
+  <style>
     body {
       margin: 0;
       padding: 0;
@@ -29,6 +32,20 @@
       margin: 0 auto 30px auto;
     }
 
+    .aviso {
+      margin-top: 35px;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    .texto-email {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-size: 14px;
+      color: #000;
+    }
+
     .email-box {
       width: 100%;
       max-width: 320px;
@@ -40,29 +57,34 @@
       box-sizing: border-box;
       margin-bottom: 15px;
       color: #000;
+      text-align: center;
+      background: #fff;
     }
 
-    .botao {
+    .botao-imagem {
       width: 100%;
       max-width: 320px;
-      height: auto;
       display: block;
-      margin: 0 auto;
-      cursor: pointer;
-      border: none;
-      background: none;
-      padding: 0;
+      margin: 0 auto 15px auto;
     }
 
-    .botao img {
+    .botao-imagem img {
       width: 100%;
       display: block;
     }
 
-    .aviso {
-      margin-top: 35px;
+    .botao-enviar {
+      width: 100%;
+      max-width: 320px;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: #000;
+      color: #fff;
+      font-size: 16px;
       font-weight: bold;
-      line-height: 1.5;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
     }
 
     form {
@@ -70,34 +92,42 @@
       flex-direction: column;
       align-items: center;
     }
-  </style></head>
+  </style>
+</head>
 <body>
   <div class="container">
-    <img src="topo01.png" alt="Tele Tudo" class="topo" /><p class="aviso">
-  🚨Para acessar o grupo com as mídias deve ter instalado no seu telefone o Telegram!
-</p>
+    <img src="topo01.png" alt="Tele Tudo" class="topo" />
 
-<p class="texto-email">
-  <strong>Quer receber todas as semanas novos grupos no seu email?</strong><br>
-  Grupos e canais gratuitos - Só links revisados sem golpes e nem vírus.<br>
-  Basta colocar seu email!<br>
-  ⏬⏬⏬
-</p>
+    <p class="aviso">
+      🚨Para acessar o grupo com as mídias deve ter instalado no seu telefone o Telegram!
+    </p>
 
-<form action="https://script.google.com/macros/s/AKfycbzdgJwzcA2F8_3VmcmSl_svpju1rtI-oFy-0QBv_I7i79fiGLI4Gb99fe6WGaR0RT6O/exec" method="POST" target="_blank">
-  <input 
-    type="email" 
-    name="email" 
-    placeholder="Digite seu e-mail"
-    class="email-box"
-    required
-  >
+    <div class="botao-imagem">
+      <a href="https://t.me/+sXreo1O5RgRhYTgx" target="_blank">
+        <img src="botao01.png" alt="Entrar no Telegram">
+      </a>
+    </div>
 
-  <button type="submit" class="botao">
-    <img src="botao01.png" alt="Cadastrar" />
-  </button>
-</form>
+    <p class="texto-email">
+      <strong>Quer receber todas as semanas novos grupos no seu email?</strong><br>
+      Grupos e canais gratuitos - Só links revisados sem golpes e nem vírus.<br>
+      Basta colocar seu email!<br>
+      ⏬⏬⏬
+    </p>
 
+    <form action="https://script.google.com/macros/s/AKfycbzjX_kCwHZdDC3uGImem0U66mmcBDr1oVSrdMze00g9EDMAQFS-N2vuF79Q_xskZBI/exec" method="POST" target="_blank">
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Digite seu e-mail"
+        class="email-box"
+        required
+      >
+
+      <button type="submit" class="botao-enviar">
+        ENVIAR
+      </button>
+    </form>
   </div>
 </body>
 </html>
